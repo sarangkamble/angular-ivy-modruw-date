@@ -1,5 +1,8 @@
 <input tabindex="-1" type="text" #pickerDt
-            (change)="onInputChange($event)"  value="{{dateModel|date:dateformat}}" [attr.disabled]="disabled ? true: null"
-                [required]="required ? true: null" (blur)="onBlur()"  (focus)="onFocus(rootDiv)" (focusout)="onFocusOut(pickerDt)"
-                class="input-control" [ngStyle]="{'cursor': readonly ? 'not-allowed':'pointer'}" [attr.placeholder]="placeholder"
+            (change)="onInputChange($event)"  value="{{dateModel|date:dateformat}}"
+                
+                 [attr.disabled]="disabled ? true: null"
+                class="input-control" [ngStyle]="{'cursor': readonly ? 'not-allowed':'pointer'}"
             />
+<!-- [attr.disabled]="disabled ? true: null"
+             -->
